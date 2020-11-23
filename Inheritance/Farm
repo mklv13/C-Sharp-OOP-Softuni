@@ -1,0 +1,76 @@
+using System;
+
+namespace Farm
+{
+    public class StartUp
+    {
+        static void Main(string[] args)
+        {
+            Dog sharo = new Dog();
+            sharo.Eat();
+            sharo.Bark();
+        }
+    }
+}
+
+
+  using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Farm
+{
+    public class Animal
+    {
+        public void Eat() 
+        {
+            Console.WriteLine("eating...");
+        }
+
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Farm
+{
+    public class Cat: Animal
+    {
+        public void Meow()
+        {
+            Console.WriteLine("meowing...");
+
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Farm
+{
+    public class Dog: Animal
+    {
+        public void Bark()
+        {
+            Console.WriteLine("barking...");
+        }
+    }
+}
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Farm
+{
+    public class Puppy: Dog
+    {   
+        public void Weep()
+        {
+            Console.WriteLine("weeping");
+        }
+    }
+}
